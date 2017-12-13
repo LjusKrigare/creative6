@@ -1,31 +1,82 @@
 <!doctype html>
-<html ng-app="myApp"> 
+<html> 
     
 <head>
-    <title>User Login and Sessions</title>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+	<title>BYU GO-FUND-ME</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+	<script type="text/javascript" src="/javascripts/app.js"></script>
 </head>
         
-<body>  
-    <div ng-controller="myController">
+<body ng-app="Save" ng-controller="mainCtrl"> 
+    <div>
         <h2 id="welcomeText">Welcome. You are Logged In as
             <%= username %>
         </h2>
-        <a id="logoutLink" href="/logout">logout</a>
+        <a id="logoutLink" href="/logout">Logout</a>
         <a id="editLink" href="/user">Edit User</a>
-        <p>Place Your Code Here
-            <p>
+     
     </div>
     <hr>
     <span id="indexMsg">
         <%= msg %>
     </span>
     <hr>
-    <span id="colorText">
-    Color
-        <%= color %>
-      </span>
-    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <div class="container text-center">
+		<h1>BYU GO-FUND-ME</h1>
+		<h6>Add and donate to "worthy" causes around campus!</h6>
+	</div>
+	<div class="container text-center">
+		<div class="container text-center">
+			<div class="input-group">
+					<input class="form-control" type="text" ng-model="title" placeholder="Your Worthy Cause" required>
+					<input class="form-control" type="number" ng-model="total" placeholder="Desired Amount" required>
+					<input class="form-control" type="number" ng-model="balance" placeholder="Amount Already Saved" required>
+					<input class="form-control" type="text" ng-model="description" placeholder="Description of Situation" required>
+					<button class="btn btn-primary" ng-click="addGoal()">Add a Cause</button>
+		</div>
+		</div>
+		<hr>
+		
+		
+		<div class="goals" ng-repeat="goal in goals">
+			<div class="container">
+				<div class="row">
+					<div class="col goalCol">
+						<h2 class="h2-custom">{{goal.title}}</h2>
+					</div>
+					<div class="col-custom progress progress-custom">
+  						<div class="progress-bar" role="progressbar" saria-valuenow="{{goal.percentage}}" aria-valuemin="0" aria-valuemax="100" ng-style="{'width': goal.percentage, 'background-color': goal.color}">{{goal.percentage}}</div>
+					</div>
+					<div class="col goalCol">
+						<h2>${{goal.balance}} / ${{goal.total}}</h2>
+					</div>
+					<div class="col goalColForm">
+						<form>
+							<input class="form-control" type="number" ng-model="goal.funds" placeholder="Deposit">
+							<div class="form-group custom-group">
+								<button class="btn btn-secondary" ng-click="delete(goal)">Remove</button>
+								<button class="btn btn-primary" ng-click="updateBalance(goal)">Donate</button>
+							</div>
+							
+						</form>
+					</div>
+				</div>
+			<div class="row">
+			   <h2 class="h2-custom">{{goal.description}}</h2>
+			</div>
+			</div>
+			<div id="ngProgress-container">
+				<div id="ngProgress"></div>
+			</div>
+			
+		</div>
+	</div>
     <script src="/javascripts/my_app.js"></script>
 </body>
       

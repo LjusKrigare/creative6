@@ -1,8 +1,54 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding-left: 25px;
+  padding-right: 25px;
+  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #b3b3ff;
 }
 
 a {
-  color: #00B7FF;
+  color: #ff0000;
 }
+
+.goals{
+	margin-top: 30px;
+}
+
+.goalColForm{
+ 	width: 100px !important;
+}
+
+.goalCol{
+ 	width: 100px !important;
+}
+
+.goalColForm{
+	width: 100px !important;
+}
+.col-custom{
+	flex: 0 0 25%;
+    max-width: 25%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 0;
+    padding-left: 0;
+}
+.progress-custom{
+	height: 75px !important;
+}
+
+.h2-custom{
+  line-height:75px; 
+  vertical-align:middle;
+  border-bottom-style: ridge;
+}
+.btn-secondary{
+  color: grey;
+  border-style: none;
+  background: none;
+}
+
+.custom-group{
+  margin-top: 4px;
+}
+

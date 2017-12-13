@@ -1,0 +1,253 @@
+nohup: ignoring input
+before / Route
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T13:54:13.170Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a28b58a3e2fa75e0ad60d2a',
+  username: 'Donovan',
+  msg: 'Authenticated as Donovan',
+  color: 'Red' }
+/ Route if user
+[0mGET / [36m304 [0m15.350 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m4.352 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m5.087 ms - -[0m
+[0mGET /user/profile [36m304 [0m13.674 ms - -[0m
+/logout Route
+[0mGET /logout [36m302 [0m5.716 ms - 56[0m
+/login Route
+[0mGET /login [32m200 [0m1.968 ms - 721[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.457 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T13:54:59.031Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true } }
+/ Route else user
+[0mGET / [36m302 [0m1.938 ms - 56[0m
+/login Route
+[0mGET /login [32m200 [0m1.948 ms - 735[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.223 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T13:56:06.586Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  msg: 'Access denied!' }
+/ Route else user
+[0mGET / [36m302 [0m1.135 ms - 56[0m
+/login Route
+[0mGET /login [36m304 [0m1.548 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.030 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T13:57:07.978Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  msg: 'Access denied!' }
+/ Route else user
+[0mGET / [36m302 [0m0.927 ms - 56[0m
+/login Route
+[0mGET /login [36m304 [0m1.854 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.122 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m1.553 ms - 200[0m
+/login Route
+[0mGET /login [32m200 [0m1.150 ms - 721[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.592 ms - 111[0m
+[0mGET /favicon.ico [33m404 [0m0.926 ms - 200[0m
+[0mPOST /login [36m302 [0m20.198 ms - 56[0m
+/login Route
+[0mGET /login [32m200 [0m2.255 ms - 736[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.554 ms - -[0m
+/signup Route
+[0mGET /signup [32m200 [0m1.151 ms - 784[0m
+[0mGET /stylesheets/style.css [36m304 [0m8.872 ms - -[0m
+Begin exports.signup
+after new user exports.signup
+after hashing user exports.signup
+after email user exports.signup
+(node:3182) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+In exports.signup
+null
+[0mPOST /signup [36m302 [0m22.160 ms - 46[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-08T08:42:25.120Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  msg: 'Authenticated as d',
+  user: '5a2b1551e595f16e0cde4109',
+  username: 'd' }
+/ Route if user
+[0mGET / [32m200 [0m1.476 ms - 776[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.631 ms - -[0m
+[0mGET /javascripts/my_app.js [32m200 [0m1.172 ms - 401[0m
+[0mGET /user/profile [32m200 [0m3.565 ms - 140[0m
+/user Route
+[0mGET /user [32m200 [0m3.178 ms - 1221[0m
+[0mGET /javascripts/my_app.js [36m304 [0m11.403 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m10.763 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.851 ms - -[0m
+[0mPOST /user/update [36m302 [0m7.680 ms - 54[0m
+/user Route
+[0mGET /user [32m200 [0m2.162 ms - 1216[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.060 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.742 ms - -[0m
+[0mGET /user/profile [32m200 [0m2.199 ms - 155[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-08T08:42:34.092Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  msg: 'User Updated.',
+  user: '5a2b1551e595f16e0cde4109',
+  username: 'd',
+  color: 'blue' }
+/ Route if user
+[0mGET / [32m200 [0m1.231 ms - 775[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.694 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.763 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.459 ms - -[0m
+/logout Route
+[0mGET /logout [36m302 [0m1.109 ms - 56[0m
+/login Route
+[0mGET /login [32m200 [0m1.130 ms - 721[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.877 ms - -[0m
+login
+{ _id: 5a2b1551e595f16e0cde4109,
+  email: 'd@d.com',
+  hashed_password: 'MMlS+rEiw/l1nwKm2Vw3WLJGtP7iOZV7LU/uRuJhcMQ=',
+  username: 'd',
+  __v: 0,
+  color: 'blue' }
+[0mPOST /login [36m302 [0m7.163 ms - 46[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-08T08:42:43.936Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2b1551e595f16e0cde4109',
+  username: 'd',
+  msg: 'Authenticated as d',
+  color: 'blue' }
+/ Route if user
+[0mGET / [32m200 [0m2.551 ms - 780[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.950 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.694 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.650 ms - -[0m
+/login Route
+[0mGET /login [31m500 [0m0.651 ms - 46[0m
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:357:11)
+    at ServerResponse.header (/opt/bitnami/apache2/htdocs/lab6/auth/node_modules/express/lib/response.js:718:10)
+    at ServerResponse.send (/opt/bitnami/apache2/htdocs/lab6/auth/node_modules/express/lib/response.js:163:12)
+    at done (/opt/bitnami/apache2/htdocs/lab6/auth/node_modules/express/lib/response.js:957:10)
+    at tryHandleCache (/opt/bitnami/apache2/htdocs/lab6/auth/node_modules/ejs/lib/ejs.js:228:10)
+    at View.exports.renderFile [as engine] (/opt/bitnami/apache2/htdocs/lab6/auth/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/opt/bitnami/apache2/htdocs/lab6/auth/node_modules/express/lib/view.js:126:8)
+    at tryRender (/opt/bitnami/apache2/htdocs/lab6/auth/node_modules/express/lib/application.js:639:10)
+    at EventEmitter.render (/opt/bitnami/apache2/htdocs/lab6/auth/node_modules/express/lib/application.js:591:3)
+    at ServerResponse.render (/opt/bitnami/apache2/htdocs/lab6/auth/node_modules/express/lib/response.js:961:7)
+    at /opt/bitnami/apache2/htdocs/lab6/auth/app.js:70:9
+    at Layer.handle_error (/opt/bitnami/apache2/htdocs/lab6/auth/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/opt/bitnami/apache2/htdocs/lab6/auth/node_modules/express/lib/router/index.js:310:13)
+    at /opt/bitnami/apache2/htdocs/lab6/auth/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/opt/bitnami/apache2/htdocs/lab6/auth/node_modules/express/lib/router/index.js:330:12)
+    at IncomingMessage.next (/opt/bitnami/apache2/htdocs/lab6/auth/node_modules/express/lib/router/index.js:271:10)
+[0mGET /favicon.ico [33m404 [0m0.545 ms - 200[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.647 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-08T08:42:53.221Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2b1551e595f16e0cde4109',
+  username: 'd',
+  msg: 'Authenticated as d',
+  color: 'blue' }
+/ Route if user
+[0mGET / [32m200 [0m1.010 ms - 780[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.887 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.812 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.435 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-08T03:23:03.656Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  msg: 'Access denied!' }
+/ Route else user
+[0mGET / [36m302 [0m2.725 ms - 56[0m
+/login Route
+[0mGET /login [36m304 [0m1.712 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.867 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m1.060 ms - 200[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-12T04:12:50.066Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  msg: 'Access denied!' }
+/ Route else user
+[0mGET / [36m302 [0m0.852 ms - 56[0m
+/login Route
+[0mGET /login [36m304 [0m0.806 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.854 ms - -[0m
+/signup Route
+[0mGET /signup [32m200 [0m1.498 ms - 783[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.904 ms - -[0m
+Begin exports.signup
+after new user exports.signup
+after hashing user exports.signup
+after email user exports.signup
+In exports.signup
+null
+[0mPOST /signup [36m302 [0m2.868 ms - 46[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-12T05:40:57.687Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  msg: 'Authenticated as Lebron',
+  user: '5a3030c9e595f16e0cde410a',
+  username: 'Lebron' }
+/ Route if user
+[0mGET / [32m200 [0m1.005 ms - 786[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.728 ms - -[0m
+[0mGET /javascripts/my_app.js [32m200 [0m1.731 ms - 401[0m
+[0mGET /user/profile [32m200 [0m1.804 ms - 152[0m
+/user Route
+[0mGET /user [32m200 [0m2.573 ms - 1226[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.665 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m1.585 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.441 ms - -[0m
+/logout Route
+[0mGET /logout [36m302 [0m1.833 ms - 56[0m
+/login Route
+[0mGET /login [32m200 [0m0.785 ms - 721[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.877 ms - -[0m
+/signup Route
+[0mGET /signup [32m200 [0m0.808 ms - 769[0m
